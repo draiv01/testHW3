@@ -32,6 +32,7 @@ class ForecastsLocationTest extends AccuweatherAbstractTest {
         String message = given().queryParam("apikey", getApiKey()).pathParam("locationKey", 50)
                 .when().get(getBaseUrl() + "/forecasts/v1/daily/10day/{locationKey}") // Resource URL: http://dataservice.accuweather.com/forecasts/v1/daily/10d
                 .then().statusCode(401)
+            //тут .getString("Message") без ":"
                 .extract().jsonPath().getString("Message:");
 
         Assertions.assertAll(() -> Assertions.assertEquals("Unauthorized: ", code),  // "Code": "Unauthorized"
