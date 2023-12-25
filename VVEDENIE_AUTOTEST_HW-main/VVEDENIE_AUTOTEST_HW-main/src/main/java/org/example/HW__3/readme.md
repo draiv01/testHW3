@@ -2,11 +2,7 @@
 
 ### 3. Тестирование REST API
 
-В рамках выполнения задания семинара, вам необходимо покрыть тестами проект
-предложений на лекции: AccuWeather — https://developer.accuweather.com/.
 
-1) Перенести тесты в свой Maven проект с помощью библиотеки Rest Assured.
-   Покрыть тестами endpoints (есть класс в базовых примерах Weather.java)
 
 **https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D**
 
