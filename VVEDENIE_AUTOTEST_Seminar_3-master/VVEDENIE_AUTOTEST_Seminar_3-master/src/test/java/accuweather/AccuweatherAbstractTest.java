@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-// по имени Properties можем получить название
+
 public abstract class AccuweatherAbstractTest {
 
     static Properties prop = new Properties();
@@ -18,7 +18,7 @@ public abstract class AccuweatherAbstractTest {
 
     @BeforeAll
     static void initTest() throws IOException {
-        //RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+        
         configFile = new FileInputStream("src/test/resources/accuweather.properties");
         prop.load(configFile);
 
